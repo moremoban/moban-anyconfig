@@ -4,3 +4,24 @@
 .. image:: https://dev.azure.com/{{organisation}}/{{name}}/_apis/build/status/{{organisation}}.{{name}}?branchName=master
    :target: https://dev.azure.com/{{organisation}}/{{name}}/_build/latest?definitionId=2&branchName=master
 {%endblock%}
+
+{% block features %}
+It allows moban to use more data formats than yaml and json.
+
+Given the following toml file, sample.toml:
+
+.. code-block::
+
+   title = "TOML Example"
+   [owner]
+   name = "Tom Preston-Werner"
+
+
+You can do:
+
+.. code-block:: bash
+
+   $ moban -c sample.toml "{{name}} mae {{title}}"
+
+
+{% endblock %}

@@ -13,6 +13,24 @@ moban-anyconfig
 .. image:: https://dev.azure.com/moremoban/moban-anyconfig/_apis/build/status/moremoban.moban-anyconfig?branchName=master
    :target: https://dev.azure.com/moremoban/moban-anyconfig/_build/latest?definitionId=2&branchName=master
 
+It allows moban to use more data formats than yaml and json.
+
+Given the following toml file, sample.toml:
+
+.. code-block::
+
+   title = "TOML Example"
+   [owner]
+   name = "Tom Preston-Werner"
+
+
+You can do:
+
+.. code-block:: bash
+
+   $ moban -c sample.toml "moban-anyconfig mae "
+
+
 
 Installation
 ================================================================================
