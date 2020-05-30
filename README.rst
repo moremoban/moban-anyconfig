@@ -7,6 +7,12 @@ moban-anyconfig
 
 .. image:: https://codecov.io/github/moremoban/moban-anyconfig/coverage.png
    :target: https://codecov.io/github/moremoban/moban-anyconfig
+.. image:: https://badge.fury.io/py/moban-anyconfig.svg
+   :target: https://pypi.org/project/moban-anyconfig
+
+.. image:: https://pepy.tech/badge/moban-anyconfig/month
+   :target: https://pepy.tech/project/moban-anyconfig/month
+
 .. image:: https://img.shields.io/github/stars/moremoban/moban-anyconfig.svg?style=social&maxAge=3600&label=Star
     :target: https://github.com/moremoban/moban-anyconfig/stargazers
 
@@ -35,11 +41,41 @@ You can do:
    $ cat moban.output
    Tom Preston-Werner made TOML Example
 
+NOTE
+--------
+
+For any of the following data formats, you elect to install by yourself.
+
+.. csv-table:: Supported formats by pluggable backend modules
+   :header: "Format", "Type", "Required backend"
+   :widths: 15, 10, 40
+
+   Amazon Ion, ion, ``anyconfig-ion-backend`` 
+   BSON, bson, ``anyconfig-bson-backend`` 
+   CBOR, cbor, ``anyconfig-cbor-backend``  or ``anyconfig-cbor2-backend`` 
+   ConifgObj, configobj, ``anyconfig-configobj-backend`` 
+   MessagePack, msgpack, ``anyconfig-msgpack-backend``
+
+Or you could choose to install all:
+
+.. code-block:: bash
+
+   $ pip install moban-anyconfig[all-backends]
+
+
 
 Installation
 ================================================================================
 
-You can get it:
+
+You can install moban-anyconfig via pip:
+
+.. code-block:: bash
+
+    $ pip install moban-anyconfig
+
+
+or clone it and install it:
 
 .. code-block:: bash
 
