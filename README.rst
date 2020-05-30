@@ -19,7 +19,8 @@ moban-anyconfig
 .. image:: https://dev.azure.com/moremoban/moban-anyconfig/_apis/build/status/moremoban.moban-anyconfig?branchName=master
    :target: https://dev.azure.com/moremoban/moban-anyconfig/_build/latest?definitionId=2&branchName=master
 
-It allows moban to use more data formats than yaml and json.
+With the power of `python-anyconfig <https://github.com/ssato/python-anyconfig>`_,
+**moban-anyconfig** allows moban to use more data formats than yaml and json.
 
 Given the following toml file, sample.toml:
 
@@ -41,8 +42,18 @@ You can do:
    $ cat moban.output
    Tom Preston-Werner made TOML Example
 
-NOTE
---------
+Not limited to toml, you can supply moban with the following data formats:
+
+.. csv-table:: Always supported formats, quoting from python-anyconfig
+   :header: "Format", "Type", "Requirement"
+   :widths: 15, 10, 40
+
+   JSON, json, ``json`` (standard lib) or ``simplejson`` [#]_
+   Ini-like, ini, ``configparser`` (standard lib)
+   Pickle, pickle, ``pickle`` (standard lib)
+   XML, xml, ``ElementTree`` (standard lib)
+   Java properties [#]_ , properties, None (native implementation with standard lib)
+   B-sh, shellvars, None (native implementation with standard lib)
 
 For any of the following data formats, you elect to install by yourself.
 
@@ -61,7 +72,6 @@ Or you could choose to install all:
 .. code-block:: bash
 
    $ pip install moban-anyconfig[all-backends]
-
 
 
 Installation
