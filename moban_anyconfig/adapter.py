@@ -1,6 +1,6 @@
-from moban.externals.file_system import open_file, path_splitext
-
 import anyconfig
+
+from moban.externals.file_system import open_file, path_splitext
 
 
 def loads(file_name):

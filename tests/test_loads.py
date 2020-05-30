@@ -1,8 +1,8 @@
 import os
 
-from moban_anyconfig.adapter import loads
-
 from nose.tools import eq_
+
+from moban_anyconfig.adapter import loads
 
 
 def test_toml():
