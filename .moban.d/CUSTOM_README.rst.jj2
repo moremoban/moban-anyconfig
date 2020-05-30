@@ -19,6 +19,7 @@ Given the following toml file, sample.toml:
 
 You can do:
 
+{% raw %}
 .. code-block:: bash
 
    $ moban -c sample.toml "{{name}} made {{title}}"
@@ -26,6 +27,6 @@ You can do:
    Templated 1 file.
    $ cat moban.output
    Tom Preston-Werner made TOML Example
-
+{% endraw %}
 
 {% endblock %}

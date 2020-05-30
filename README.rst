@@ -26,10 +26,14 @@ Given the following toml file, sample.toml:
 
 You can do:
 
+
 .. code-block:: bash
 
-   $ moban -c sample.toml "moban-anyconfig mae "
-
+   $ moban -c sample.toml "{{name}} made {{title}}"
+   Templating {{owner.na... to moban.output
+   Templated 1 file.
+   $ cat moban.output
+   Tom Preston-Werner made TOML Example
 
 
 Installation
