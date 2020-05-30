@@ -23,6 +23,3 @@ targets:
   - LICENSE: "mit_license.jj2"
   - MANIFEST.in: MANIFEST.in.jj2
   - ".github/workflows/pythonpublish.yml": "pythonpublish.yml"
-  - "azure-pipelines.yml": "azure/azure-pipelines.yml"
-  - ".azure-pipelines-steps-macos.yml": "azure/pipelines-steps-macos.yml"
-  - ".azure-pipelines-steps.yml": "azure/pipelines-steps.yml"

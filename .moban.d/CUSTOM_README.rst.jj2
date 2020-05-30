@@ -8,26 +8,7 @@
 {% block features %}
 It allows moban to use more data formats than yaml and json.
 
-Given the following toml file, sample.toml:
-
-.. code-block::
-
-   title = "TOML Example"
-   [owner]
-   name = "Tom Preston-Werner"
-
-
-You can do:
-
-{% raw %}
-.. code-block:: bash
-
-   $ moban -c sample.toml "{{name}} made {{title}}"
-   Templating {{owner.na... to moban.output
-   Templated 1 file.
-   $ cat moban.output
-   Tom Preston-Werner made TOML Example
-{% endraw %}
+{% include "toml_example.rst.jj2" %}
 
 NOTE
 --------
