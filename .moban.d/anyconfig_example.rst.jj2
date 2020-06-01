@@ -57,5 +57,5 @@ Or you could choose to install all:
 **Why do it mean 'any location'?**
 
 Thanks to `pyfilesystem 2 <https://github.com/PyFilesystem/pyfilesystem2>`_,
-{{name}} allow to read data back from `git repo <https://github.com/moremoban/gitfs2>`_, `pypi <https://github.com/moremoban/pypifs>`_ package, `http(s) <https://github.com/moremoban/httpfs>`_, zip,
+{{name}} is able to read data back from `git repo <https://github.com/moremoban/gitfs2>`_, `pypi <https://github.com/moremoban/pypifs>`_ package, `http(s) <https://github.com/moremoban/httpfs>`_, zip,
 tar, ftp, `s3 <https://github.com/PyFilesystem/s3fs>`_ or `you name it <https://www.pyfilesystem.org/page/index-of-filesystems/>`_.
